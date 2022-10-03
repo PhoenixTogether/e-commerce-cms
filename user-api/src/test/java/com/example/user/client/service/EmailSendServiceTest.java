@@ -1,26 +1,23 @@
 package com.example.user.client.service;
 
-import com.example.user.config.FeignConfig;
-import com.example.user.service.EmailSendService;
-import feign.Response;
+import com.example.user.client.MailgunClient;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
 
 @SpringBootTest
 class EmailSendServiceTest {
 
     @Autowired
-    private EmailSendService emailSendService;
+    private MailgunClient MailgunClient;
 
     @Test
     public void EmailTest() {
         //given
-        String response = emailSendService.sendEmail();
+        MailgunClient.sendMail(null);
         //when
         //then
-        System.out.println(response);
+
     }
 
 }
