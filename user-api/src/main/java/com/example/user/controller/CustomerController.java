@@ -7,7 +7,7 @@ import com.example.user.domain.customer.CustomerDto;
 import com.example.user.domain.model.Customer;
 import com.example.user.exception.CustomException;
 import com.example.user.service.CustomerBalanceService;
-import com.example.user.service.CustomerService;
+import com.example.user.service.customer.CustomerService;
 import com.zerobase.domain.common.UserVo;
 import com.zerobase.domain.config.JwtAuthenticationProvider;
 import lombok.RequiredArgsConstructor;
