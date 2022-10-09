@@ -1,4 +1,4 @@
-package com.example.user.service;
+package com.example.user.service.customer;
 
 
 import static com.example.user.exception.ErrorCode.ALREADY_VERIFY;
