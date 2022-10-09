@@ -1,0 +1,50 @@
+### 회원가입 ( 고객 )
+POST http://localhost:8081/signup/customer
+Content-Type: application/json
+
+{
+  "birth" : "1989-03-26",
+  "email" : "sjy19910222@gmail.com",
+  "name" : "simjy",
+  "password" : "password",
+  "phone" : "01011112222"
+}
+
+### 이메일인증 ( 고객 )
+GET http://localhost:8081/signup/customer/verify?email=sjy19910222@gmail.com&code=GYNvvmoabf
+
+### 로그인 ( 고객 )
+POST http://localhost:8081/signIn/customer
+Content-Type: application/json
+
+{
+    "email" : "sjy19910222@gmail.com",
+    "password" : "password"
+}
+
+### 회원 정보 조회 ( 고객 )
+GET http://localhost:8081/customer/getInfo
+Content-Type: application/json
+X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NjUzNDMxMTMsImV4cCI6MTY2NTQyOTUxM30.2erDa9q1xpPrLgNXWhrXhFGnZAJqU_I5PvNQKIrMewQ
+
+{
+  "email" : "sjy19910222@gmail.com",
+  "password" : "password"
+}
+
+### 잔액 변경 ( 고객 )
+POST http://localhost:8081/customer/balance
+Content-Type: application/json
+X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NjUzNDMxMTMsImV4cCI6MTY2NTQyOTUxM30.2erDa9q1xpPrLgNXWhrXhFGnZAJqU_I5PvNQKIrMewQ
+
+{
+  "from" : "admin",
+  "message" : "잔액 적립",
+  "money" : 5000
+}
+
+######################
+
+### 회원가입 ( 셀러 )
+
+### 로그인 ( 셀러 )
