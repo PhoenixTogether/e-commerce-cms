@@ -43,8 +43,27 @@ X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSn
   "money" : 5000
 }
 
-######################
-
 ### 회원가입 ( 셀러 )
+POST http://localhost:8081/signup/seller
+Content-Type: application/json
+
+{
+  "birth" : "1989-03-26",
+  "email" : "sjy19910222@gmail.com",
+  "name" : "simjy",
+  "password" : "password",
+  "phone" : "01011112222"
+}
+
+### 이메일인증 ( 셀러 )
+GET http://localhost:8081/signup/seller/verify?email=sjy19910222@gmail.com&code=GYNvvmoabf
+
 
 ### 로그인 ( 셀러 )
+POST http://localhost:8081/signIn/seller
+Content-Type: application/json
+
+{
+  "email" : "sjy19910222@gmail.com",
+  "password" : "password"
+}
