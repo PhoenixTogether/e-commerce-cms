@@ -5,7 +5,7 @@ Content-Type: application/json
 {
   "birth" : "1989-03-26",
   "email" : "sjy19910222@gmail.com",
-  "name" : "simjy",
+  "name" : "simjy1",
   "password" : "password",
   "phone" : "01011112222"
 }
@@ -50,13 +50,13 @@ Content-Type: application/json
 {
   "birth" : "1989-03-26",
   "email" : "sjy19910222@gmail.com",
-  "name" : "simjy",
+  "name" : "simjy2",
   "password" : "password",
   "phone" : "01011112222"
 }
 
 ### 이메일인증 ( 셀러 )
-GET http://localhost:8081/signup/seller/verify?email=sjy19910222@gmail.com&code=GYNvvmoabf
+GET http://localhost:8081/signup/seller/verify?email=sjy19910222@gmail.com&code=DJpBVG7pac
 
 
 ### 로그인 ( 셀러 )
