@@ -1,8 +1,7 @@
 ### 상품 추가
 POST http://localhost:8082/seller/product
 Content-Type: application/json
-X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjY1Mzk0MjY4LCJleHAiOjE2NjU0ODA2Njh9.cDF1B97ZLrbhEdngIdoxurSeL_GyZgEaCNKtkmqJtEg
-
+X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjY1Mzg3NjU1LCJleHAiOjE2NjU0NzQwNTV9.M4QFAHMmox2db4rpH358-r--aDODpyHTPyBwTOrYkmc
 
 {
   "description" : "상품 설명",
@@ -13,13 +12,13 @@ X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSn
       "price" : 10000
     }
   ],
-  "name" : "나이키 에어포스"
+  "name" : "나이키 에어포스 2"
 }
 
 ### 상품 아이템 추가
 POST http://localhost:8082/seller/product/item
 Content-Type: application/json
-X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjY1Mzk0MjY4LCJleHAiOjE2NjU0ODA2Njh9.cDF1B97ZLrbhEdngIdoxurSeL_GyZgEaCNKtkmqJtEg
+X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjY1Mzg3NjU1LCJleHAiOjE2NjU0NzQwNTV9.M4QFAHMmox2db4rpH358-r--aDODpyHTPyBwTOrYkmc
 
 
 {
@@ -33,9 +32,11 @@ X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSn
 ### 상품 수정
 PUT http://localhost:8082/seller/product
 Content-Type: application/json
-X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjY1Mzk0MjY4LCJleHAiOjE2NjU0ODA2Njh9.cDF1B97ZLrbhEdngIdoxurSeL_GyZgEaCNKtkmqJtEg
+X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjY1Mzg3NjU1LCJleHAiOjE2NjU0NzQwNTV9.M4QFAHMmox2db4rpH358-r--aDODpyHTPyBwTOrYkmc
 
 {
+  "email" : "sjy19910222@gmail.com",
+  "password" : "password",
   "description" : "상품 설명",
   "items" : [
     {
@@ -52,25 +53,35 @@ X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSn
 ### 상품 아이템 수정
 PUT http://localhost:8082/seller/product/item
 Content-Type: application/json
-X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjY1Mzk0MjY4LCJleHAiOjE2NjU0ODA2Njh9.cDF1B97ZLrbhEdngIdoxurSeL_GyZgEaCNKtkmqJtEg
+X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjY1Mzg3NjU1LCJleHAiOjE2NjU0NzQwNTV9.M4QFAHMmox2db4rpH358-r--aDODpyHTPyBwTOrYkmc
 
 
 {
-  "id" : 1,
+  "id" : 2,
   "productId" : 1,
   "count" : 1,
-  "name" : "260",
+  "name" : "250",
   "price" : 10000
 }
 
 ### 상품 삭제
-DELETE http://localhost:8082/seller/product?id=2
+DELETE http://localhost:8082/seller/product?id=1
 Content-Type: application/json
-X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjY1Mzk0MjY4LCJleHAiOjE2NjU0ODA2Njh9.cDF1B97ZLrbhEdngIdoxurSeL_GyZgEaCNKtkmqJtEg
+X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjY1Mzg3NjU1LCJleHAiOjE2NjU0NzQwNTV9.M4QFAHMmox2db4rpH358-r--aDODpyHTPyBwTOrYkmc
 
 
 ### 상품 아이템 삭제
-DELETE http://localhost:8082/seller/product/item?id=3
+DELETE http://localhost:8082/seller/product/item?id=2
 Content-Type: application/json
-X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjY1Mzk0MjY4LCJleHAiOjE2NjU0ODA2Njh9.cDF1B97ZLrbhEdngIdoxurSeL_GyZgEaCNKtkmqJtEg
+X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcjgwMUdJaXFpdjBCS3RpT1VyZUliYUJkSnAxU2NoaGs2WlgzNDdUR2ZrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjY1Mzg3NjU1LCJleHAiOjE2NjU0NzQwNTV9.M4QFAHMmox2db4rpH358-r--aDODpyHTPyBwTOrYkmc
+
+
+### 상품 검색
+GET http://localhost:8082/search/product?name=나이키
+Content-Type: application/json
+
+### 상품 디테일 검색
+GET http://localhost:8082/search/product/detail?productId=2
+Content-Type: application/json
+
 

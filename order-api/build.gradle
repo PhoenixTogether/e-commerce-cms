@@ -6,6 +6,12 @@ plugins {
 
 group = 'com.zerobase.cms.user'
 
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
 repositories {
     mavenCentral()
 }
@@ -14,11 +20,7 @@ ext {
     set('springCloudVersion', '2021.0.1')
 }
 
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
+
 
 dependencies {
 
@@ -31,9 +33,11 @@ dependencies {
 
     // queryDSL
     implementation 'com.querydsl:querydsl-jpa:5.0.0'
-    annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jpa"
-    annotationProcessor "jakarta.persistence:jakarta.persistence-api"
-    annotationProcessor "jakarta.annotation:jakarta.annotation-api"
+    annotationProcessor 'com.querydsl:querydsl-apt:5.0.0:jpa'
+    annotationProcessor 'jakarta.persistence:jakarta.persistence-api'
+    annotationProcessor 'jakarta.annotation:jakarta.annotation-api'
+
+
 
     // redis
     implementation 'org.springframework.boot:spring-boot-starter-data-redis'
